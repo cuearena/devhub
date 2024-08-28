@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0;
+  }
+  body {
+    @apply bg-slate-950 text-white font-inter;
+  }
+}
+
+@font-face {
+  font-family: "CosmicVortex";
+  src: url("./assets/CosmicVortex.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-image {
+  background-image: url("./assets/img/mainBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-gradiant {
+  background: linear-gradient(180deg, #6147ff 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.remove-input-arrows {
+  --webkit-appearance: none;
+  --moz-appearance: textfield;
+}
